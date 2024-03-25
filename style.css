@@ -1,0 +1,255 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    
+    color: white;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 1;
+}
+
+
+#liste{
+    padding-right: 2%;
+    padding-top: 1%;
+    
+    
+}
+h1{
+    text-align: center;
+    font-size: 33px;
+    
+   
+}
+
+#menu_image >img{
+    width: 100px;
+    height: 100px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+#menu a:hover,a:hover{
+    color: orange;
+}
+
+#liste_menu{
+    
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 50px;
+}
+
+
+/* #image_slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+} */
+
+
+#image_slogan > img{
+    
+    padding-top: 5%;
+    padding-bottom: 25px;
+}
+
+
+#image_slogan > h2{
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#image_telechargement{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+#espace_telechargement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+#bandeau_milieu{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+
+#bandeau_blanc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-color: white;
+    color: black;
+  
+}
+
+
+#bandeau_blanc >p{
+    color: grey;
+}
+    
+#ensemble_des_chiffres_animes{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    justify-items:center;
+   gap: 250px;
+    
+
+}
+
+
+
+.chiffre_anime{
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+
+
+#bandeau_superieur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+
+.chiffre{
+    font-size: 70px;
+    color: #77B5FE ;
+}
+
+
+#bandeau_milieu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap : 25px;
+    padding-bottom: 8%;
+    
+ 
+}
+
+#image_gauche > img{
+    width: 575px;
+    height: 633px;
+}
+.gallerie > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 27px;
+ 
+    
+}
+
+
+#ensemble_gallerie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 25px;
+    height: 627px;
+    width: 580px;
+    padding-top: 25px;
+}
+
+#bandeau_milieu >p{
+    padding-top: 12%;
+    font-size: 35px;
+}
+
+
+#bandeau_inferieur{
+    padding-bottom: 3%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: grey;
+    background-color: black;
+    gap: 200px;
+
+}
+
+
+.footer_organize > img{
+    width: 100px;
+    height: 100px;
+}
+
+.footer_organize{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+
+#image_application{
+    padding-bottom: 3%;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
