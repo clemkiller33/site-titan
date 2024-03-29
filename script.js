@@ -65,3 +65,16 @@ document.querySelector('.slider').addEventListener('scroll', function() {
 
     document.querySelector('h3').textContent = h3Contents[currentIndex];
 });
+
+
+
+document.querySelectorAll('.section').forEach(section => {
+    section.addEventListener('wheel', e => {
+        e.preventDefault(); // Empêche le défilement par défaut
+        const delta = Math.sign(e.deltaY);
+        window.scrollBy({
+            top: delta * window.innerHeight,
+            behavior: 'smooth'
+        });
+    });
+});

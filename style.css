@@ -41,6 +41,8 @@ body{
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     margin: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 body, html {
@@ -98,7 +100,7 @@ h1{
 
 #image_slogan > img{
     
-    padding-top: 5%;
+   
     padding-bottom: 25px;
 }
 
@@ -175,6 +177,9 @@ h1{
     align-items: center;
     padding-bottom: 50px;
     max-width: 100%;
+    background-color: #f5f6fa;
+    color: black;
+    min-height: 100vh;
 }
 
 
@@ -409,7 +414,8 @@ section {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-    min-width: 100%
+    min-width: 100%;
+    scroll-snap-align: start;
   
 }
 
