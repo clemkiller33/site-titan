@@ -1,4 +1,4 @@
-
+/* 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -7,10 +7,10 @@
 
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
+}*/
 a{
     text-decoration: none;
     color: white;
@@ -18,7 +18,7 @@ a{
 
 ol, ul {
 	list-style: none;
-}
+}/*
 blockquote, q {
 	quotes: none;
 }
@@ -30,14 +30,22 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */ 
 body{
-    
     color: white;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     line-height: 1;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    margin: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -49,14 +57,14 @@ body{
 }
 h1{
     text-align: center;
-    font-size: 33px;
+    font-size:xx-large;
     
-   
 }
 
 #menu_image >img{
     width: 100px;
     height: 100px;
+    border: 0.5px solid white;
 }
 
 #menu{
@@ -117,11 +125,7 @@ h1{
 }
 
 
-#bandeau_milieu{
-    display:flex;
-    flex-direction: row;
-    
-}
+
 
 
 #bandeau_blanc{
@@ -129,9 +133,10 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    background-color: white;
+   
+    background-color: #f5f6fa;
     color: black;
+    max-width: 100%;
   
 }
 
@@ -145,7 +150,9 @@ h1{
     flex-direction:row ;
     justify-content: center;
     justify-items:center;
-   gap: 250px;
+    gap: 250px;
+    max-width: 100%;
+    margin-left: 5%;
     
 
 }
@@ -167,6 +174,7 @@ h1{
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
+    max-width: 100%;
 }
 
 
@@ -217,7 +225,13 @@ h1{
 
 
 #bandeau_inferieur{
-    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+   
 }
 
 footer{
@@ -244,6 +258,11 @@ footer{
 }
 
 #image_application{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
     padding-bottom: 3%;
 }
 
@@ -252,4 +271,302 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+#premier_bandeau{
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    font-size: xx-large;
+    
+}
+
+#premier_bandeau > button{
+   
+    background-color: black;
+    border : 1px solid white;
+    width: 125px;
+    height: 50px;
+    text-decoration: none;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.caroussel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	padding: 2rem;
+    color: black;
+    background-color: #f5f6fa;
+    min-height: 100vh;
+    gap: 25px;
+    position:relative;
+    width: 100vmax;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-size: x-large;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+.slider img {
+    scroll-snap-align: start;
+    object-fit: cover;
+    flex-shrink: 0; /* Empêche les images de se rétrécir pour s'adapter au conteneur */
+    width: 100%; /* Garantit que chaque image occupe toute la largeur de son conteneur */
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+    justify-content: center;
+	bottom: 1.25rem;
+	left: 45%;
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+.slider-nav a.active {
+    background-color: #ffff; /* ou une autre couleur pour indiquer l'image active */
+}
+
+#principale{
+   
+    font-size: xx-large;
+}
+
+
+
+#gallerie_image{
+    display: grid;
+    grid-template-columns :repeat(2,50%);
+    grid-gap: 5%;
+    padding-bottom: 10%;
+    justify-content: center ;
+    align-items: center;
+    
+   
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    min-width: 100%
+  
+}
+
+
+#section3{
+    background-color: #f5f6fa;
+    color: black;
+    height: 100vh;
+  
+
+}
+
+.button{
+    border:1px solid white;
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    border-radius: 3px  ;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+#ensemble_offre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.offre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 5px;
+    border:1px solid  grey  ;
+    min-height: 80vh;
+    font-size: large;
+    width: 30vmax;
+   
+    
+}
+
+.texte_offre_mois{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+.texte_offre_annee{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;    
+}
+.ensemble_offres_texte{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    padding-bottom: 10%;
+}
+
+.liste_service{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center ;
+    padding: 0;
+    margin: 0;
+   
+    max-width: 90%;
+    
+}
+
+.liste_service >li{
+    text-align:left;
+}
+
+.non{
+    text-decoration: line-through;
+}
+
+.download{
+    background-color:;
+    margin-top: 10%;
+    border-radius: 10px;
+    width: 100px;
+    height: 5vh;
+    border:none ;
+}
+
+.download:hover{
+    background-color: orange;
+}
+
+.ensemble_offres_texte >a{
+    color: black;
+    text-decoration:underline;
+}
+
+.ensemble_offres_texte >a:hover{
+    color: orange;
+}
+
+
+
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2; /* Assurez-vous que les flèches sont au-dessus du carrousel */
+}
+
+.prev-arrow,
+.next-arrow {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.prev-arrow {
+    margin-left: 1rem;
+}
+
+.next-arrow {
+    margin-right: 1rem;
+}
+
+
+.carousel-arrows >button{
+    
+    color: white;
+    background-color: black;
+}
+
+.slide {
+    flex: 0 0 33.33%; /* Ajustez en fonction du nombre d'images */
+    scroll-snap-align: center;
 }

@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titan</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Lien vers le fichier CSS de Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Lien vers le fichier CSS du thème par défaut de Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- Lien vers le fichier CSS personnalisé -->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+
+    <script src="script.js" defer></script>
 </head>
-
-
-
 <body>
     <header>
         <div id="menu">
@@ -19,74 +23,145 @@
             </div>
             <div id="liste">
                 <ul id="liste_menu">
-                <li><a href="#">ACCEUIL</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="espace_client.html">ESPACE CLIENT</a></li>
+                    <li><a href="#">ACCEUIL</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="espace_client.html">ESPACE CLIENT</a></li>
+                </ul>
             </div>
-        </ul></div>
+        </div>
     </header>
     <main>
-        <div id="image_slogan">
-            <img src="img/maquette-iphone-10-10s-11-11pro-nouvel-iphone-12-12pro-12-mini-maquette-ecran-iphone-illustration-vectorielle_561158-2783.avif" width="500" height="550" alt="">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magnam facilis architecto. Odio totam tempora voluptate! Nobis modi voluptatem odio impedit esse, id est officiis a necessitatibus dicta quia. Qui.</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat, tenetur architecto tempore consequatur in, aperiam temporibus animi alias deleniti nostrum magni quos vero iure modi nulla. Quod, obcaecati esse!</h2>
-        </div>
 
-        <div id="image_telechargement">
-            <div id="image_tel">
-                <img src="img/maquette-iphone-10-10s-11-11pro-nouvel-iphone-12-12pro-12-mini-maquette-ecran-iphone-illustration-vectorielle_561158-2783.avif" alt="">
-            </div>
-
-            <div id="espace_telechargement">
-                <img src="img/notation.png" alt="">
-                <div id="bouton_telechargement">
-                <button class="telecharment">Disponible sur Google Play</button>
-                <button class="telecharment">Disponible sur l'App Store</button></div>
-            </div>
-        </div>
-
-        <div id="image_application">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur accusantium quisquam alias odit mollitia ducimus omnis saepe ipsam impedit, sint ad nam sequi quidem porro quis eos velit eligendi corrupti?</h2>
-            <img src="img/maquette-iphone-10-10s-11-11pro-nouvel-iphone-12-12pro-12-mini-maquette-ecran-iphone-illustration-vectorielle_561158-2783.avif" alt="">
-            <img src="img/maquette-iphone-10-10s-11-11pro-nouvel-iphone-12-12pro-12-mini-maquette-ecran-iphone-illustration-vectorielle_561158-2783.avif" alt="">
-            <img src="img/maquette-iphone-10-10s-11-11pro-nouvel-iphone-12-12pro-12-mini-maquette-ecran-iphone-illustration-vectorielle_561158-2783.avif" alt="">
-            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, ad voluptatibus! Dignissimos veritatis aut neque maiores commodi laboriosam placeat aperiam culpa fuga deserunt pariatur facilis at assumenda asperiores, perspiciatis excepturi.</h2>
-
-        </div>
-        <div id="bandeau_blanc">
-            <div id="bandeau_superieur">
-                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos asperiores culpa magni omnis praesentium porro numquam doloremque voluptate, inventore laboriosam sed nam, voluptatum debitis voluptas reiciendis iste repellendus nobis consequatur?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, libero hic. Laudantium doloribus cumque odit hic ad modi quis exercitationem saepe molestiae rerum veniam dolore quaerat, voluptatibus velit reprehenderit architecto!</p>
-                <div id="ensemble_des_chiffres_animes">
-                    <div class="chiffre_anime">
-                        <p class="chiffre">20</p>
-                        <p>PME</p>
-                    </div>
-                    <div class="chiffre_anime">
-                        <p class="chiffre">2000</p>
-                        <p>commerciaux équipés</p>
-                    </div>
-                    <div class="chiffre_anime">
-                        <p class="chiffre">3500</p>
-                        <p>téléchargements mobiles</p>
-                    </div>
+        <section id="principale"><div><img src="img/logo_titan.png" alt="logo titan" width="300" height="150"><h1>Soyez maitre de vos projets</h1><button id="plus" class="button">En savoir plus >></button></div></section>
+        <section class="caroussel">
+            <h2>Titan est le logiciel de gestion pour les prescripteurs</h2>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="captu/1.png" alt="3D rendering of an imaginary orange planet in space" />
+                    <img id="slide-2" src="captu/2.png" alt="3D rendering of an imaginary green planet in space" />
+                    <img id="slide-3" src="captu/3.png" alt="3D rendering of an imaginary blue planet in space" />
                 </div>
+                <div class="carousel-arrows">
+                    <button class="prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-arrow"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+                
             </div>
+            <h3>Gérer vos projets ainsi que l'ensemble de vos clients dans une interface intuitive, élégante et dynamique</h3>
+        </section>
         
-            <img src="img/61kmnhjKsPL._AC_UF1000,1000_QL80_.jpg" alt="image" width="600" height="400">
-            <div id="bandeau_inferieur">
-                <div id="gallerie image">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, ullam. Architecto, voluptate, exercitationem illo porro repellendus expedita, sunt quam dicta velit dolore molestias autem rerum fugit neque veniam eius vitae.</p>
-                <button id="En savoir plus"><a href="espace_client.html"></a></button>
+        <section id="section2">
+            <div id="texte_telechargement">
+                <h2>Titan est un logiciel modulable,personnalisable et paramètrable</h2>
+                <h3>Vivez votre propre experience</h3>
+                <p>Planifiez vos prochains rendez-vous en synchronisant en 1 clic votre agenda outlook</p>
             </div>
-    </div>
+            <button class="button">Téléchargement</button>
+
+        </section>
+        <section id="section3">
+            <h2>Débloquer la pleine experience de Titan</h2>
+            <div id="ensemble_offre">
+                <div  class="offre">
+                    <h2>Version gratuite</h2>
+                    <div class="ensemble_offres_texte">
+                            <h3>€0</h3>
+                    </div>
+                        <ul class="liste_service">
+                            <li>Ensemble des fonctionnalitées</li>
+                            <li>Accès à la doc en ligne</li>
+                            <li>Limiter à 5 comptes client</li>
+                            <li class="non">En contact directe avec le support</li>
+                            <li class="non">Accès aux ressources de formation</li>
+                            <li class="non">Formation pour votre équipe</li>
+                        </ul>
+                        <button class="download">→</button>
+                    </div>
+                    <div class="offre">
+                        <h2>Version Premium</h2>
+                        <div class="ensemble_offres_texte">
+                            <div class="texte_offre_mois">
+                                <h3>€69.99</h3><p>/month</p>
+                            </div>
+                            <h3>Ou</h3>
+                            <div class="texte_offre_annee">
+                                <h4>€799.99</h4><p>/année</p>
+                            </div>
+                        </div>
+                        <ul class="liste_service">
+                            <li>Ensemble des fonctionnalitées</li>
+                            <li>Accès à la doc en ligne</li>
+                            <li>Aucune limite de nombre de compte</li>
+                            <li>En contact directe avec le support</li>
+                            <li>Accès aux ressources de formation</li>
+                            <li class="non">Formation pour votre équipe</li>
+                        </ul>
+                        <button class="download">→</button>
+                    </div>
+                    <div class="offre">
+                        <h2>Version Entreprise</h2>
+                        <div class="ensemble_offres_texte">
+                            <a href="contact.html"><h3>Nous contacter</h3></a>
+                        </div>
+                        <ul class="liste_service">
+                            <li>Ensemble des fonctionnalitées</li>
+                            <li>Accès à la doc en ligne</li>
+                            <li>Aucune limite de nombre de compte</li>
+                            <li>En contact directe avec le support</li>
+                            <li>Accès aux ressources de formation</li>
+                            <li>Formation pour votre équipe</li>
+                        </ul>
+                        <button class="download">→</button>
+                    </div>
+                </div>
+        
+               
+          
+        </section>
+        
+        <section>
+            <div id="bandeau_blanc">
+                <div id="bandeau_inferieur">
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, ullam. Architecto, voluptate, exercitationem illo porro repellendus expedita, sunt quam dicta velit dolore molestias autem rerum fugit neque veniam eius vitae.</p>
+                    <div id="gallerie_image">
+                        <img src="captu/1.png" alt="" width="500" height="300">
+                        <img src="captu/2.png" alt="" width="500" height="300">
+                        <img src="captu/3.png" alt="" width="500" height="300">
+                        <img src="captu/4.png" alt="" width="500" height="300">
+                        <img src="" alt="">
+                    </div>
+                  
+                    <!-- <button id="En savoir plus"><a href="espace_client.html"></a></button> -->
+                </div>
+        
+                <div id="bandeau_superieur">
+                    <div id="ensemble_des_chiffres_animes">
+                        <div class="chiffre_anime">
+                            <p class="chiffre">20</p>
+                            <p>PME</p>
+                        </div>
+                        <div class="chiffre_anime">
+                            <p class="chiffre">2000</p>
+                            <p>commerciaux équipés</p>
+                        </div>
+                        <div class="chiffre_anime">
+                            <p class="chiffre">3500</p>
+                            <p>téléchargements mobiles</p>
+                        </div>
+                    </div>
+                    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos asperiores culpa magni omnis praesentium porro numquam doloremque voluptate, inventore laboriosam sed nam, voluptatum debitis voluptas reiciendis iste repellendus nobis consequatur?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, libero hic. Laudantium doloribus cumque odit hic ad modi quis exercitationem saepe molestiae rerum veniam dolore quaerat, voluptatibus velit reprehenderit architecto!</p>
+  
+                </div>
+            </div>       
+    </section>
     </main>
         <footer>
             <div class="footer_organize">
