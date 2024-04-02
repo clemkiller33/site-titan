@@ -45,9 +45,15 @@ body{
     scroll-behavior: smooth;
 }
 
-body, html {
+html,
+body{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
     margin: 0;
-    padding: 0;
+  
+    text-align: center;
+    text-decoration: none;
 }
 
 
@@ -246,6 +252,7 @@ footer{
     color: grey;
     background-color: black;
     gap: 200px;
+    
 
 }
 
@@ -306,7 +313,7 @@ a{
 }
 
 
-.caroussel {
+#caroussel {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -420,13 +427,7 @@ section {
 }
 
 
-#section3{
-    background-color: #f5f6fa;
-    color: black;
-    height: 100vh;
-  
 
-}
 
 .button{
     border:1px solid white;
@@ -510,7 +511,6 @@ section {
 }
 
 .download{
-    background-color:;
     margin-top: 10%;
     border-radius: 10px;
     width: 100px;
@@ -576,3 +576,31 @@ section {
     flex: 0 0 33.33%; /* Ajustez en fonction du nombre d'images */
     scroll-snap-align: center;
 }
+
+
+
+
+
+
+header{
+    position: sticky;
+    top: 0;
+    
+}
+
+
+
+.light-section{
+    background-color: #f5f6fa;
+    color: black;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.dark-section{
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
