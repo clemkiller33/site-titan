@@ -78,23 +78,3 @@ document.querySelectorAll('.section').forEach(section => {
         });
     });
 });
-
-
-window.addEventListener('scroll', function() {
-    var header = document.querySelector('header');
-    var sections = document.querySelectorAll('section');
-
-    sections.forEach(function(section) {
-        var rect = section.getBoundingClientRect();
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-            if (section.classList.contains('light-section')) {
-                header.classList.remove('dark-text');
-                header.classList.add('light-text');
-            } else if (section.classList.contains('dark-section')) {
-                header.classList.remove('light-text');
-                header.classList.add('dark-text');
-            }
-        }
-    });
-});
-
