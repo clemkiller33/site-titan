@@ -571,7 +571,7 @@ header{
     display: none;
 }
 
-@media only screen and (max-width: 1084px) {
+@media only screen and (max-width: 768px) {
     .desktop-menu {
         display: none;
     }
@@ -647,6 +647,16 @@ header{
     footer{
         display: flex;
         flex-direction: column;
+    }
+
+    #logo > img{
+        width:8%;
+        height: 8%;
+    }
+    
+    #menu_image > img{
+        width: 25%;
+        height: 25%;
     }
 
 }
