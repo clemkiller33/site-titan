@@ -58,9 +58,13 @@ document.querySelector('.slider').addEventListener('scroll', function() {
     const currentIndex = Math.round(slider.scrollLeft / slideWidth);
 
     const h3Contents = [
-        "Gérer vos projets ainsi que l'ensemble de vos clients dans une interface intuitive, élégante et dynamique",
-        "Autre contenu pour la deuxième image",
-        "Encore un autre contenu pour la troisième image"
+        "Planifiez vos prochains rendez-vous avec l'agenda TITAN, synchronisable avec outlook",
+        "Créez, modifié et personnalisé la fiche client a votre guise ",
+        "Créez et édité votre propre fiche de contact pour votre projet",
+        "Gérez vos différentes dépenses et recettes ",
+        "Mettez en place l'historique des activités de votre projet",
+        "Visualisez les points clés de votre projet",
+        "Mettez en place les différentes spécifications de votre contrat"
     ];
 
     document.querySelector('h3').textContent = h3Contents[currentIndex];
