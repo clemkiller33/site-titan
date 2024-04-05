@@ -277,6 +277,7 @@ a{
     border-radius: 0.5rem;
     -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
     scrollbar-width: none; /* Hide scrollbar Firefox */
+    width: auto;
 }
 
 .slider img {
@@ -533,7 +534,7 @@ header{
 .light-section{
     background-color: #f5f6fa;
     color: black;
-    max-height: 100vh;
+    min-height: 100vh;
     position: relative;
     max-width: 100%;
 
@@ -621,9 +622,10 @@ header{
         body,
         html
         {
-            font-size:xx-small;
+            font-size:small;
             text-align: center;
             width: 100%;
+            font-family: sans-serif;
         } 
 
 
@@ -635,6 +637,7 @@ header{
         .offre{
             max-width: auto;
             max-height: auto;
+            min-width: auto;
             font-size: small
         }
         section{
@@ -653,10 +656,17 @@ header{
         }
         
         #menu_image > img {
-            width: 25vw;
+            width: 15vw;
             height: auto; /* Réduire la hauteur du logo pour les appareils mobiles */
             padding-top: 3%;
             padding-left: 3%;
+        }
+        #bandeau_superieur{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding:5%  ;
         }
         
 
