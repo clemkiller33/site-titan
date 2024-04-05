@@ -564,6 +564,7 @@ header{
 
 #section4{
     position: relative;
+    min-height: 100vh;
 }
 
 
