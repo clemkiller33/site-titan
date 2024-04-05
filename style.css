@@ -359,6 +359,8 @@ button{
     min-height: 80vh;
     font-size: large;
     width: 25vmax; 
+    max-height: fit-content;
+    transition: transform 0.3s ease;
 
 }
 
@@ -588,7 +590,7 @@ header{
             font-size:small;
             text-align: center;
             width: 100%;
-            font-family: sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         } 
 
 
@@ -598,11 +600,16 @@ header{
         }
 
         .offre{
-            max-width: auto;
-            max-height: auto;
-            min-width: auto;
+            max-width: fit-content;
+            max-height: fit-content;
             font-size: small;
-            min-height: auto;
+           
+        }
+
+        .texte_offre_mois,
+        .ensemble_offres_texte >h3,
+        .texte_offre_annee{
+            font-size: x-small;
         }
 
         #ensemble_offre{
