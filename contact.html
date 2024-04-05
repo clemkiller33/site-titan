@@ -24,22 +24,29 @@
         </ul></div>
     </header>
     <main>
+        
+        <div id="container">
+            <div id="formulaire">
+                <h1>Travaillez avec nous</h1>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f872d13d-1b6c-46f0-97aa-170efe882e34">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
 
-        <div id="Formulaire">
-            <h1>Contactez-nous</h1>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="f872d13d-1b6c-46f0-97aa-170efe882e34">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="email">E-mail :</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
 
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Envoyer</button>
-            </form>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+            <div id="text">
+                <h2>Formulaire</h2>
+                <h3>Rejoignez-nous</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ea explicabo deserunt. Aspernatur voluptatem, blanditiis, eaque sint harum doloremque aliquid cum quia adipisci ducimus nulla, odio itaque debitis assumenda autem!</p>
+            </div>
         </div>
     </main>
 

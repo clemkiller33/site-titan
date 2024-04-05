@@ -27,8 +27,8 @@ table {
 
 body {
     
-    color: black;
-    background-color: #f5f6fa;
+    color: white;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     line-height: 1;
@@ -38,6 +38,7 @@ body {
   form {
     max-width: 400px;
     margin: 0 auto;
+    
   }
 
   label {
@@ -129,22 +130,31 @@ footer{
     gap: 5px;
    
 }
+#container{
+  display: flex;
+  flex-direction: row;
 
-#Formulaire{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    flex-direction: column;
-   
-    height:400px;
-    width :600px ;
-    margin:9% 35% 13% 35%;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+ 
+}
+
+#formulaire{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  min-width: 50%;
 }
 
 
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-}
+    min-height: 100vh;
+    text-align: center;
+} 
