@@ -631,14 +631,24 @@ header{
 
       
         .ensemble_offres_texte{
-            font-size: xx-small;
+            font-size:small;
         }
 
         .offre{
             max-width: auto;
             max-height: auto;
             min-width: auto;
-            font-size: small
+            font-size: small;
+            min-height: auto;
+        }
+
+        #ensemble_offre{
+            gap: 2%;
+        }
+
+        .liste_service{
+            font-size: xx-small;
+            gap: 2% ;
         }
         section{
             min-height: 100vh;
@@ -668,6 +678,18 @@ header{
             align-items: center;
             padding:5%  ;
         }
+        .slider-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #gallerie_img{
+            gap: 2%;
+            padding-top: 1.5vh;
+        }
+
+      
         
 
 
