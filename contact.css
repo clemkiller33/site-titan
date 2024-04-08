@@ -25,15 +25,26 @@ table {
 	border-spacing: 0;
 }
 
-body {
-    
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+
     color: white;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     line-height: 1;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    margin: 0;
+    scroll-behavior: smooth;
 
   }
+
 
   form {
     max-width: 400px;
@@ -70,7 +81,7 @@ body {
 
   #liste{
     padding-right: 2%;
-    padding-top: 1%;
+    padding-top: 2%;
     
     
 }
@@ -133,23 +144,25 @@ footer{
 #container{
   display: flex;
   flex-direction: row;
-  height: 100%;
+  min-height: 100%;
   align-items: center;
   justify-content: center;
-  max-width: 70%;
+  min-width: 100%;
+  
+ 
+  ;
  
 }
 #formulaire {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 50%;
-  min-height: 100%;
   background-color: #f9f9f9;
-  padding: 20px; 
+  padding: 40px; 
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   color: black;
-  flex: 1;
+  
+  border-radius: 10%;
 }
 
 h1 {
@@ -195,9 +208,45 @@ main{
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    background-color: black;
+    min-width: 100%;
+    
 } 
 
-
-#img > img{
-  max-height: 100%  ;
+#container1{
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+
+#container1 > button{
+  border: 1px solid white;
+  border-radius: 5%;
+  font-size: x-large;
+}
+
+
+section{
+  min-height: 100vh;
+  min-width: 100%;
+  max-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+button > a:hover{
+  color:white;
+  
+}
+button{
+  font-size: x-large;
+}
+
