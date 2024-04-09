@@ -614,9 +614,11 @@ header{
     }
 
     .offre {
-        width: 90%; /* Réduisez davantage la largeur des offres */
-        max-width: none; /* Assurez-vous qu'il n'y a pas de largeur maximale fixe */
-        margin: 0 auto 20px; /* Centrez horizontalement et ajoutez un espace en bas */
+        width: 33%; /* Réduisez davantage la largeur des offres */
+        max-width: 33%; /* Assurez-vous qu'il n'y a pas de largeur maximale fixe */
+        height: 25vh;
+        max-height: 25vh;
+   
     }
     .texte_offre_mois,
     .ensemble_offres_texte > h3,
@@ -630,7 +632,7 @@ header{
     }
 
     .liste_service {
-        font-size: x-small;
+        font-size:small;
         gap: 2%;
         justify-content: center; /* Assurez-vous que les éléments sont bien alignés */
     }
