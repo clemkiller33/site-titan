@@ -566,10 +566,7 @@ header{
         font-family: Arial, Helvetica, sans-serif;
         overflow-x: hidden; /* Empêche le défilement horizontal */
     }
-    /* main {
-        padding-left: 2px; /* Ajoute un petit padding à gauche */
-        padding-right: 2px; /* Ajoute un petit padding à droite */
-    } */
+
     .menu-toggle {
         display: block;
         cursor: pointer;
@@ -614,12 +611,17 @@ header{
     }
 
     .offre {
-        width: 33%; /* Réduisez davantage la largeur des offres */
-        max-width: 33%; /* Assurez-vous qu'il n'y a pas de largeur maximale fixe */
+        width: calc(33% - 20px); /* Réduire la largeur des offres */
+        max-width: calc(33% - 20px); /* Assurez-vous qu'il n'y a pas de largeur maximale fixe */
         height: 25vh;
         max-height: 25vh;
-   
+        margin-right: 20px; /* Ajoutez un espace entre les offres */
     }
+    
+    .offre:last-child {
+        margin-right: 0; /* Supprimer la marge à droite de la dernière offre */
+    }
+
     .texte_offre_mois,
     .ensemble_offres_texte > h3,
     .texte_offre_annee {
@@ -656,7 +658,7 @@ header{
     }
         
     #menu_image > img {
-        width: 15vw;
+        width: 7vw;
         height: auto; /* Réduire la hauteur du logo pour les appareils mobiles */
         padding-top: 3%;
         padding-left: 3%;
