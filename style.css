@@ -566,10 +566,10 @@ header{
         font-family: Arial, Helvetica, sans-serif;
         overflow-x: hidden; /* Empêche le défilement horizontal */
     }
-    main {
+    /* main {
         padding-left: 2px; /* Ajoute un petit padding à gauche */
         padding-right: 2px; /* Ajoute un petit padding à droite */
-    }
+    } */
     .menu-toggle {
         display: block;
         cursor: pointer;
