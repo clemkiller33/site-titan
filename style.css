@@ -612,14 +612,14 @@ header{
         .offre{
             max-width: fit-content;
             max-height: fit-content;
-            font-size: small;
+            font-size: 100%;
            
         }
 
         .texte_offre_mois,
         .ensemble_offres_texte >h3,
         .texte_offre_annee{
-            font-size: x-small;
+            font-size: 100%;
         }
 
         #ensemble_offre{
