@@ -337,8 +337,12 @@ button{
 }
 
 .button:hover{
-    background-color: white;
-    color: black;
+    background-color: orange;
+    
+}
+
+.button >a{
+    color: white;
 }
 
 #ensemble_offre{
