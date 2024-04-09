@@ -613,8 +613,10 @@ header{
             width: fit-content;
             max-width: 33%;
             height: fit-content;
-            max-height: 45vh;
+            max-height: 20vh;
             font-size: 100%;
+            margin: 0;
+            padding: 0;
            
         }
 
