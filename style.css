@@ -554,140 +554,133 @@ header{
     display: none;
 }
 
-    @media only screen and (max-width: 768px) {
-
-
-        .menu-toggle {
-            display: block;
-            cursor: pointer;
-            padding-top: 3%;
-            padding-right: 3%;
-        }
-
-        .menu-toggle input {
-            display: none;
-        }
-
-        .menu-toggle span {
-            display: block;
-            width: 2vmax; /* Ajuster la largeur pour les appareils mobiles */
-            height: 1vh; /* Ajuster la hauteur pour les appareils mobiles */
-            margin-bottom: 3%;
-            background-color: white;
-            transition: transform 0.3s;
-        }
-        
-
-        .menu-toggle ul.menu {
-            display: none;
-            position: absolute;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            top: 40px;
-            left: 0;
-            width: 100%;
-            
-        }
-
-        .menu-toggle input:checked ~ ul.menu {
-            display: block;
-        }
-
-        #liste{
-            display:none;
-        }
-
-        body,
-        html
-        {
-            font-size:small;
-            text-align: center;
-            width: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-        } 
-
-
-      
-        .ensemble_offres_texte{
-            font-size:small;
-        }
-
-        .offre{
-            width: fit-content;
-            max-width: 33%;
-            height: fit-content;
-            max-height: 20vh;
-            font-size: 100%;
-            margin: 0;
-            padding: 0;
-           
-        }
-
-        .texte_offre_mois,
-        .ensemble_offres_texte >h3,
-        .texte_offre_annee{
-            font-size: 100%;
-        }
-
-        #ensemble_offre{
-            gap: 2%;
-        }
-
-        .liste_service{
-            font-size:x-small;
-            gap: 2% ;
-        }
-
-        .liste_service > li{
-            text-align: center;
-        }
-        section{
-            min-height: 100vh;
-        }
-
-
-        footer{
-            display: flex;
-            flex-direction: column;
-        }
-
-        #logo > img{
-            width:8%;
-            height: 8%;
-        }
-        
-        #menu_image > img {
-            width: 15vw;
-            height: auto; /* Réduire la hauteur du logo pour les appareils mobiles */
-            padding-top: 3%;
-            padding-left: 3%;
-        }
-        #bandeau_superieur{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding:5%  ;
-        }
-        .slider-nav{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-        }
-        #gallerie_img{
-            gap: 2%;
-            padding-top: 1.5vh;
-        }
-
-      
-        
-
-
+@media only screen and (max-width: 768px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: small;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
     }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding-top: 3%;
+        padding-right: 3%;
+    }
+
+    .menu-toggle input {
+        display: none;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 2vmax; /* Ajuster la largeur pour les appareils mobiles */
+        height: 1vh; /* Ajuster la hauteur pour les appareils mobiles */
+        margin-bottom: 3%;
+        background-color: white;
+        transition: transform 0.3s;
+    }
+        
+    .menu-toggle ul.menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        top: 40px;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu-toggle input:checked ~ ul.menu {
+        display: block;
+    }
+
+    #liste {
+        display: none;
+    }
+
+    .ensemble_offres_texte {
+        font-size: small;
+    }
+
+    .offre {
+        width: 100%;
+        max-width: 100%;
+        height: fit-content;
+        max-height: 20vh;
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .texte_offre_mois,
+    .ensemble_offres_texte > h3,
+    .texte_offre_annee {
+        font-size: 80%; /* Ajustez la taille de la police pour les petits écrans */
+    }
+
+    #ensemble_offre {
+        gap: 2%;
+    }
+
+    .liste_service {
+        font-size: x-small;
+        gap: 2%;
+        justify-content: center; /* Assurez-vous que les éléments sont bien alignés */
+    }
+
+    .liste_service > li {
+        text-align: center;
+    }
+
+    section {
+        min-height: 100vh;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo > img {
+        width: 8%;
+        height: 8%;
+    }
+        
+    #menu_image > img {
+        width: 15vw;
+        height: auto; /* Réduire la hauteur du logo pour les appareils mobiles */
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+
+    #bandeau_superieur {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .slider-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #gallerie_img {
+        gap: 2%;
+        padding-top: 1.5vh;
+    }
+}
+
 
 
 
