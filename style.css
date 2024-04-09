@@ -567,8 +567,8 @@ header{
         overflow-x: hidden; /* Empêche le défilement horizontal */
     }
     main {
-        padding-left: 5px; /* Ajoute un petit padding à gauche */
-        padding-right: 5px; /* Ajoute un petit padding à droite */
+        padding-left: 2px; /* Ajoute un petit padding à gauche */
+        padding-right: 2px; /* Ajoute un petit padding à droite */
     }
     .menu-toggle {
         display: block;
