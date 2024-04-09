@@ -421,10 +421,20 @@ button{
     width: 35%;
     height: 5vh;
     border:none ;
+   
 }
 
 .download:hover{
     background-color: orange;
+   
+}
+
+.download>a{
+    color: black;
+}
+
+.download>a:hover{
+    color: white;
 }
 
 .ensemble_offres_texte >a{
@@ -619,6 +629,10 @@ header{
         .liste_service{
             font-size:x-small;
             gap: 2% ;
+        }
+
+        .liste_service > li{
+            text-align: center;
         }
         section{
             min-height: 100vh;
