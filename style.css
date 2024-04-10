@@ -412,7 +412,8 @@ button{
 }
 
 .liste_service >li{
-    text-align:left;
+    text-align:center;
+    font-size: large;
 }
 
 .non{

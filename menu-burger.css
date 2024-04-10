@@ -120,7 +120,7 @@ header{
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
-    background-color: rgba(0,0,0,70%);
+    background-color: rgba(0,0,0,85%);
     align-items: center;
     justify-content: center;
       
@@ -205,10 +205,14 @@ header{
           display: none;
       }
 
-      ul{
+      #menu-liste-burger{
         display:flex;
         flex-direction: column;
+       
       }
 
- 
-  }
+      /* #menu-liste-burger > li{
+        font-size: xx-large; 
+     } */
+    }
+
