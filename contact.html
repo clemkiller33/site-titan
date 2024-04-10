@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="menu-burger.css">
   <title>Formulaire de Contact</title>
   <style>
    
@@ -11,18 +12,39 @@
 </head>
 <body>
     <header>
-        <div id="menu">
-            <div id="menu_image">
-                <a href="index.html"><img src="img/ngplus_03312200_185714927.png" alt=""></a>
+        <nav>
+            <div class="navbar">
+                <div id="menu_liste">
+                    <ul>
+                        <li><a href="index.html">HOME</a>  </li>
+                        <li><a href="contact.html">CONTACT</a>  </li>   
+                        <li><a href="espace_client.html">ESPACE CLIENT</a></li>
+                    </ul>
+                </div>
+
+                <div class="logo">
+                    <img src="img/ngplus_03312200_185714927.png" alt=""">
+                </div>
+                <div class="container nav-container">
+                    
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>  
+                
+                    <div class="menu-items">
+                        <ul id="menu-liste-burger">
+                            <li><a href="#">HOME</a>  </li>
+                            <li><a href="contact.html">CONTACT</a>  </li>   
+                            <li><a href="espace_client.html">ESPACE CLIENT</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div id="liste">
-                <ul id="liste_menu">
-                <li><a href="index.html">ACCEUIL</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="espace_client.html">ESPACE CLIENT</a></li>
-            </div>
-        </ul></div>
-    </header>
+        </nav>
+    </header>   
     <main>
         <section>
             <div id="container1">
