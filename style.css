@@ -506,8 +506,9 @@ button{
   
 .logo > img{
     width: 100%;
-    height: 7vh;
-    margin-top: 15%;
+    height: 100vh;
+    border: 1px solid white;
+    
 }
 
 header{
@@ -516,9 +517,6 @@ header{
     
 }
 
-.logo > img{
-    border: 1px solid white;
-}
 .logo > img:hover{
     border: 1px solid orange;
 }
@@ -643,11 +641,18 @@ header{
     }
 
     #logo > img {
-        width: 5%;
-        height: 5%;
+        width: 15%;
+        height: 7%;
     }
         
+    .logo > img{
+        width: 25%;
+        height: 5vh;
+    }
 
+    .logo{
+        top: 5vh;
+    }
 
     #bandeau_superieur {
         display: flex;
