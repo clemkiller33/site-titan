@@ -568,10 +568,14 @@ header{
         margin: 0;
         padding: 0;
         width: 100%;
-        font-size: small;
+        
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         overflow-x: hidden; /* Empêche le défilement horizontal */
+    }
+
+    h1,h2,h3,p,ul,li{
+        font-size: x-small;
     }
 
     .menu-toggle {
@@ -633,7 +637,7 @@ header{
     .download{
         margin-bottom: 5%;
     }
-    
+
     #section3{
         max-height: none;
     }
@@ -725,7 +729,7 @@ header{
     place-items: center;
     gap: 5%;
     padding-top: 5vh;
-    min-height: 100%;
+   
     
 }
 
