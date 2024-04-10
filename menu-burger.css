@@ -139,14 +139,31 @@ header{
   
   .logo {
     position: absolute;
-    top: 5vh;
+    top: 2.7vh;
     right: 15px;
     font-size: 1.2rem;
     color: #0e2431;
     min-width: 15%;
     min-height: 25vh;
+    left: 15%;
+
+    
    
   }
+  .logo > img{
+    width: 5%;
+    height: 6vh;
+    border: 1px solid white;
+    margin-left: 80%;
+    min-width: 5%;
+    min-height: 6vh;
+    
+}
+
+
+.logo > img:hover{
+    border: 1px solid orange;
+}
 
 
 
@@ -220,8 +237,15 @@ header{
        
       }
 
-      /* #menu-liste-burger > li{
-        font-size: xx-large; 
-     } */
+              
+    .logo > img{
+        width: 10%;
+        height: 5vh;
+    }
+
+    .logo{
+        top: 5vh;
+    }
+
     }
 

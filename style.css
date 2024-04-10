@@ -504,12 +504,7 @@ button{
 
 
   
-.logo > img{
-    width: 100%;
-    height: 100vh;
-    border: 1px solid white;
-    
-}
+
 
 header{
     position: sticky;
@@ -517,9 +512,6 @@ header{
     
 }
 
-.logo > img:hover{
-    border: 1px solid orange;
-}
 
 .light-section{
     background-color: #f5f6fa;
@@ -644,15 +636,7 @@ header{
         width: 15%;
         height: 7%;
     }
-        
-    .logo > img{
-        width: 25%;
-        height: 5vh;
-    }
 
-    .logo{
-        top: 5vh;
-    }
 
     #bandeau_superieur {
         display: flex;
