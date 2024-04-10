@@ -182,9 +182,9 @@ header{
      .nav-container .hamburger-lines {
         display: block;
         height: 10vh;
-        width: 10%;
+        width: 15%;
         position: absolute;
-        top: 17px;
+        top: 20px;
         left: 20px;
         z-index: 2;
         display: flex;
