@@ -132,7 +132,7 @@ header{
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
-    background-color: rgba(0,0,0,85%);
+    background-color: rgba(0,0,0,90%);
     align-items: center;
     justify-content: center;
       
@@ -161,7 +161,7 @@ header{
    
   }
   .logo > img{
-    width: 6%;
+    width: 8%;
     height: 8vh;
     border: 1px solid white;
     
