@@ -435,6 +435,7 @@ button{
 
 .download>a{
     color: black;
+    font-size:large;
 }
 
 .download>a:hover{
@@ -613,7 +614,7 @@ header{
     .offre {
         width: 100%;
         min-height: auto; /* Annulez la hauteur minimale pour permettre un ajustement automatique en fonction du contenu */
-        max-height: 60vh; /* Réduisez la hauteur maximale des offres */
+        max-height: 65vh; /* Réduisez la hauteur maximale des offres */
         font-size: medium;
         margin-bottom: 20px; /* Ajoute une marge en bas de chaque div .offre */
     }
