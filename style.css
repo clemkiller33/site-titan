@@ -578,6 +578,10 @@ header{
         font-size: small;
     }
 
+    h2,h3{
+        font-size: large;
+    }
+
     .menu-toggle {
         display: block;
         cursor: pointer;
@@ -711,12 +715,13 @@ header{
         justify-items: center;
         padding: 0;
         margin: 0;
+        padding-right: 5%;
     }
 
     #gallerie_img {
         gap: 2%;
         padding-top: 1.5vh;
-        grid-template-rows: repeat(2,30%);
+        grid-template-rows: repeat(2,30vh);
     }
 
     #bandeau_superieur{
