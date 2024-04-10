@@ -624,6 +624,10 @@ header{
     
     }
 
+    .download{
+        margin-bottom: 3%;
+    }
+
     #section3{
         max-height: none;
     }
