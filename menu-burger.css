@@ -181,7 +181,7 @@ header{
   
      .nav-container .hamburger-lines {
         display: block;
-        height: 10vh;
+        height: 5vh;
         width: 15%;
         position: absolute;
         top: 20px;
@@ -192,13 +192,13 @@ header{
         gap: 5%;
         color: white;
       } 
-      /* .nav-container .hamburger-lines .line {
+      .nav-container .hamburger-lines .line {
         display: block;
         height: 1.5vh;
         width: 100%;
         border-radius: 10px;
-        background: #0e2431;
-      } */
+        background: white;
+      } 
       
 
       #menu_liste{

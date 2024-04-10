@@ -574,8 +574,8 @@ header{
         overflow-x: hidden; /* Empêche le défilement horizontal */
     }
 
-    h1,h2,h3,p,ul,li{
-        font-size: x-small;
+    p,ul,li{
+        font-size: small;
     }
 
     .menu-toggle {
@@ -655,7 +655,7 @@ header{
     #ensemble_offre {
         gap: 10%; /* Assurez-vous que les offres ont un espacement entre elles */
         padding: 0 5px; /* Ajoutez un léger padding pour éviter que les offres ne touchent les bords de l'écran */
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
        
@@ -708,6 +708,7 @@ header{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        justify-items: center;
         padding: 0;
         margin: 0;
     }
@@ -715,6 +716,12 @@ header{
     #gallerie_img {
         gap: 2%;
         padding-top: 1.5vh;
+        grid-template-rows: repeat(2,30%);
+    }
+
+    #bandeau_superieur{
+        justify-content: center;
+        align-items: center;
     }
 }
 
