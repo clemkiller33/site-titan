@@ -510,7 +510,12 @@ header{
     
 }
 
-
+.logo > img{
+    border: 1px solid white;
+}
+.logo > img:hover{
+    border: 1px solid orange;
+}
 
 .light-section{
     background-color: #f5f6fa;

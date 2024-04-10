@@ -12,36 +12,46 @@
     <!-- Lien vers le fichier CSS personnalisé -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="menu-burger.css">
 
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <div id="menu"  class="desktop-menu">
-                <div id="menu_image">
-                    <img src="img/ngplus_03312200_185714927.png" alt="">
-                </div>
-                <div id="liste">
-                    <ul id="liste_menu">
-                        <li><a href="#">ACCEUIL</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                        <li><a href="espace_client.html">ESPACE CLIENT</a></li>
+            <div class="navbar">
+                <div id="menu_liste">
+                    <ul>
+                        <li><a href="#">HOME</a>  </li>
+                        <li><a href="philosophie.html">PHILOSOPHIE</a>  </li>   
+                        <li><a href="impact.html">IMPACT</a></li>
                     </ul>
                 </div>
-                <div class="menu-toggle mobile-menu">
-                    <input type="checkbox">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul class="menu">
-                        <li><a href="#">ACCEUIL</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                        <li><a href="espace_client.html">ESPACE CLIENT</a></li>
-                    </ul>
+
+                <div class="logo">
+                    <img src="img/ngplus_03312200_185714927.png" alt="" width="75" height="75">
+                </div>
+                <div class="container nav-container">
+                    
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>  
+                
+                    <div class="menu-items">
+                        <ul>
+                            <li><a href="#">HOME</a>  </li>
+                            <li><a href="philosophie.html">Contact</a>  </li>   
+                            <li><a href="impact.html">Espace client</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
+    </header>   
+
     </header>
     <main>
 
