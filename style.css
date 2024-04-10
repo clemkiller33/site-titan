@@ -503,7 +503,12 @@ button{
 }
 
 
-
+  
+.logo > img{
+    width: 100%;
+    height: 7vh;
+    margin-top: 15%;
+}
 
 header{
     position: sticky;
@@ -645,8 +650,8 @@ header{
     }
 
     #logo > img {
-        width: 8%;
-        height: 8%;
+        width: 5%;
+        height: 5vh;
     }
         
     #menu_image > img {
@@ -672,23 +677,24 @@ header{
         justify-items: center;
         padding: 0;
         margin: 0;
-        padding-right: 5%;
+        right:auto;
     }
 
     #gallerie_img {
         gap: 5%;
         padding-top: 1.5vh;
         grid-template-columns: repeat(2,40%);
-        grid-template-rows: repeat(2,4em);
+        grid-template-rows: repeat(2,10em);
     }
 
     #bandeau_superieur{
         justify-content: center;
         align-items: center;
     }
+
     #gallerie_img > img,
     .gallerie_texte > img{
-        width: 100%;
+        width: 100%; 
         height: 100%;
 }
 }
