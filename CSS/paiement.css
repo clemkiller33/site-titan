@@ -81,12 +81,27 @@ a{
     justify-content: start;
     align-items: center;
     background-color: black;
-    width: 50%;
+    width: 60%;
     height: 100vh;
     float: left;
     color: #f5f6fa;
     font-size: small;
     gap:8%;
+}
+
+#texte{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    width: 90%;
+    height: 100vh;
+    float: left;
+    color: #f5f6fa;
+    font-size: small;
+    gap:3%;
 }
 
 #droiteblanche {
@@ -95,12 +110,17 @@ a{
     justify-content: center;
     align-items: center;
     background-color: #f5f6fa;
-    width: 50%;
+    width: 40%;
     height: 100vh;
     float: left;
+    font-size: large;
 }
 
 #offre_achat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 50%;
     border: 1px solid black;
     border-radius: 8%;
@@ -113,9 +133,6 @@ a{
 } */
 
 
-h1{
-    padding-bottom: 10%;
-}
 
 
 
@@ -125,4 +142,65 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 5%;
+}
+
+
+#button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+
+
+.achat > a{color: white;}
+
+
+.achat:hover{
+    transform: scale(110%);
+}
+
+#offre_achat > h3{
+    color: orange;
+}
+.achat {
+    width: 100%;
+    height: 5vh;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    flex-direction: row;
+    transition: transform 0.3s ease; /* Transition pour le retour à la taille normale */
+}
+
+.achat > a {
+    color: white;
+}
+
+#offre_achat > h3 {
+    color: orange;
+}
+
+#reduction {
+    animation: agrandir 1s ease; /* Animation d'agrandissement lors du chargement */
+}
+
+@keyframes agrandir {
+    0% {
+        transform: scale(1); /* Échelle de départ */
+    }
+    100% {
+        transform: scale(1.1); /* Échelle finale */
+    }
+}
+
+#reduction:hover {
+    transform: scale(1.1); /* Échelle agrandie au survol */
+    transition: transform 0.3s ease; /* Transition pour le retour à la taille normale */
 }
