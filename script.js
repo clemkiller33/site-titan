@@ -82,3 +82,7 @@ document.querySelectorAll('.section').forEach(section => {
         });
     });
 });
+
+
+
+//carrousel grid
