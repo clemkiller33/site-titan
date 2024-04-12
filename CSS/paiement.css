@@ -254,11 +254,13 @@ li{
 
   #offre_achat{
     border:0px;
-    max-height: 80vh;
+    max-height: 60vh;
     padding: 0;
     font-size: small;
     align-items: center;
     justify-content: center;
+    min-width: 100%;
+    
   
   }
   #retour{
@@ -270,10 +272,22 @@ li{
   }
 
   .achat{
-    max-height: 25%;
+    display: none;
   }
 
   ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
+  ul >li{
+    width: 100%;
+  }
+
+  img{
+    max-width: 40%;
+    max-height: 15vh;
+  }
+
+
 }
