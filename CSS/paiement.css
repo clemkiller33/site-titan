@@ -232,3 +232,48 @@ li{
   padding-right: 92%;
   padding-bottom: 2%;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+  #gauche_blanc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #gauchenoire{
+    min-width: 100%;
+    min-height: 100vh;
+  }
+
+  #droiteblanche{
+    min-width: 100%;
+    max-height: 70vh;
+  }
+
+  #offre_achat{
+    border:0px;
+    max-height: 80vh;
+    padding: 0;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  #retour{
+    display: none;
+  }
+
+  .achat > a{
+    font-size: x-small;
+  }
+
+  .achat{
+    max-height: 25%;
+  }
+
+  ul{
+    list-style: none;
+  }
+}
