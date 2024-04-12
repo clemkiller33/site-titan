@@ -87,6 +87,7 @@ a{
     color: #f5f6fa;
     font-size: small;
     gap:8%;
+   
 }
 
 #texte{
@@ -101,7 +102,7 @@ a{
     float: left;
     color: #f5f6fa;
     font-size: small;
-    gap:3%;
+    gap:7%;
 }
 
 #droiteblanche {
@@ -127,6 +128,9 @@ a{
     padding:3%;
 }
 
+#offre_achat > h3{
+  padding-bottom: 20%;
+}
 
 /* ul{
     list-style: none;
@@ -152,6 +156,7 @@ footer{
     align-items: center;
     gap: 10px;
     width: 100%;
+   
 }
 
 
@@ -203,4 +208,27 @@ footer{
 #reduction:hover {
     transform: scale(1.1); /* Échelle agrandie au survol */
     transition: transform 0.3s ease; /* Transition pour le retour à la taille normale */
+}
+
+li > p{
+  font-size: 70%;
+}
+
+li{
+  padding-bottom: 10%;
+}
+
+
+#retour >a{
+  text-decoration: underline;
+  padding-right: 90%;
+  color: white;
+
+}
+
+#retour{
+  display: flex;
+  flex-direction: row;
+  padding-right: 92%;
+  padding-bottom: 2%;
 }

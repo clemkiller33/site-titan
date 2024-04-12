@@ -731,48 +731,6 @@ header{
     cursor: pointer;
 }
 
-.gallerie_texte .expand-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 90%;
-    max-height: 90%;
-    z-index: 1000;
-}
-.carousel-arrows {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1000;
-}
-
-.carousel-arrows button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
-}
 
 
-img {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-    /* Autres styles que vous pouvez ajouter */
-}
 
-
-.expand-img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 90%;
-    max-height: 90%;
-    z-index: 1000;
-}
