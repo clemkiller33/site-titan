@@ -590,6 +590,7 @@ header{
         max-height: 65vh; /* Réduisez la hauteur maximale des offres */
         font-size: medium;
         margin-bottom: 20px; /* Ajoute une marge en bas de chaque div .offre */
+        padding: 0;
     }
 
     .offre:hover{
@@ -605,8 +606,6 @@ header{
         max-height: none;
     }
     
-    /* .offre:last-child {
-        margin-right: 0; /* Supprimer la marge à droite de la dernière offre */
     
 
     .texte_offre_mois,
@@ -647,8 +646,9 @@ header{
     }
 
     #logo > img {
-        width: 15%;
-        height: 7%;
+        width: 12%;
+        height: 5%;
+        margin-left: 2%;
     }
 
 
@@ -693,6 +693,10 @@ header{
     .gallerie_texte > img{
         width: 100%; 
         height: 100%;
+       
+    }
+    .gallerie_texte >h3{
+        font-size: small;
     }
 
     h2,h3,p{font-size: large;}
