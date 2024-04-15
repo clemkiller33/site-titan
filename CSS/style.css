@@ -680,10 +680,6 @@ header{
         
     }
 
-    #bandeau_superieur{
-        justify-content: center;
-        align-items: center;
-    }
 
     .carousel-arrows >button{
         background-color: transparent;
