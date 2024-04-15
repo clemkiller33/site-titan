@@ -676,7 +676,7 @@ header{
     #gallerie_img {
         gap: 5%;
         padding-top: 1.5vh;
-        grid-template-columns: repeat(2,40%);
+        grid-template-columns: repeat(2,100%);
         
     }
 
