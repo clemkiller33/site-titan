@@ -156,8 +156,8 @@ header{
     
    
   }
-  .logo > img{
-    height: 8vh;
+  #image_ngplus{
+    height: 10vh;
     border: 1px solid white;
     min-width: 90%;
     min-height: 100%;
