@@ -1,0 +1,38 @@
+html,
+body{
+    background-color: #f9f9f9;
+}
+
+main{
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+a{
+    
+    color: black;
+}
+
+button{
+    background-color: #f9f9f9;
+    min-width: 15%;
+    min-height: 6vh;
+    border-radius: 10px;
+}
+
+button a {
+    text-decoration: none;
+    font-size: large;
+}
+
+button:hover{
+    transform: scale(110%);
+}
