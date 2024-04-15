@@ -203,7 +203,19 @@ a{
     text-decoration: none;
 }
 
+.footer_organize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+    gap: 5%;
+}
 
+
+.footer_organize  a{
+    text-decoration: underline;
+}
 #caroussel {
     display: flex;
     flex-direction: column;
