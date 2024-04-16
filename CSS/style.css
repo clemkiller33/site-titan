@@ -172,6 +172,7 @@ h1{
     align-items: start;
     gap: 2%;
     /* list-style-type:disc ; */
+    font-size: 1.4rem;
   
    
     
@@ -188,6 +189,7 @@ h1{
     margin: 2%;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    font-size: 2rem;
 }
 .liste_groupe:hover{
    transform: scale(1.1);
@@ -747,6 +749,12 @@ header{
     }
 
     h2,h3,p{font-size: large;}
+
+
+
+    .liste_groupe{
+        margin: 0;
+    }
 }
 
 
