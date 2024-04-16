@@ -154,6 +154,57 @@ h1{
 
 #section2{
     font-size: x-large;
+    justify-content: flex-start;
+    position: relative;
+}
+
+#liste-fonctionnalites{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+    
+}
+
+.listage ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2%;
+    /* list-style-type:disc ; */
+  
+   
+    
+}
+
+.liste_groupe{
+    display: flex;
+    flex-direction: column;
+    justify-content:start ;
+    align-items: start;
+    width: 33%;
+    border: 1px solid white;
+    height: 70vh;
+    margin: 2%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.liste_groupe:hover{
+   transform: scale(1.1);
+}
+.listage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50%; 
+}
+ .listage ul > li{
+    padding-bottom: 5%;
+    padding-left: 10%; 
+} 
+
+.listage h4{
+    padding-bottom: 2%;
 }
 
 
