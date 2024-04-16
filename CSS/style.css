@@ -208,6 +208,7 @@ h1{
 
 .listage h4{
     padding-bottom: 10%;
+    color: orange;
 }
 
 
@@ -617,6 +618,9 @@ header{
     min-height: 100vh;
 }
 
+video{
+    max-width: 80%;
+}
 
 
 /* Styles spécifiques au menu burger */
@@ -660,12 +664,16 @@ header{
         max-height: none;
     }
     
-    
+    .ensemble_offres_texte,
+    .texte_offre_mois{
+        gap:1%;
+    }
 
     .texte_offre_mois,
     .ensemble_offres_texte > h3,
     .texte_offre_annee {
-        font-size: medium /* Ajustez la taille de la police pour les petits écrans */
+        font-size: small /* Ajustez la taille de la police pour les petits écrans */
+        
     }
 
     #ensemble_offre {
@@ -678,7 +686,9 @@ header{
         
     }
 
- 
+    #section2 > .button{
+        margin: 3%;
+    }
 
     .liste_service {
         font-size:large;
@@ -705,7 +715,15 @@ header{
         margin-left: 2%;
     }
 
+    .button{
+        height: 4vh;
+        width: auto;
+    }
 
+
+    .button > a{
+        font-size: small;
+    }
     #bandeau_superieur {
         display: flex;
         flex-direction: column;
@@ -727,12 +745,7 @@ header{
         
     }
 
-    #gallerie_img {
-        gap: 5%;
-        padding-top: 1.5vh;
-        grid-template-columns: repeat(2,100%);
-        
-    }
+
 
 
     .carousel-arrows >button{
@@ -749,7 +762,7 @@ header{
         font-size: small;
     }
 
-    h2,h3,p{font-size: large;}
+    h2,h3,h4{font-size: x-large;}
 
 
 
@@ -765,8 +778,9 @@ header{
 
     .listage ul{
         font-size: 0.9rem;
-        align-items: center;
+        align-items: start;
         padding-top: 2%;
+        
     }
 
     #liste-fonctionnalites{
@@ -786,6 +800,9 @@ header{
     .listage ul > li{
         padding-left: 0;
     }
+
+
+   
 }
 
 
@@ -817,7 +834,7 @@ header{
 
 #gallerie_img {
     display: grid;
-    grid-template-columns: repeat(2, 30%);
+    grid-template-columns: repeat(2, 40%);
     justify-content: center;
     align-items: center;
     gap: 5%;
