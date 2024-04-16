@@ -202,11 +202,12 @@ h1{
 }
  .listage ul > li{
     padding-bottom: 5%;
-    padding-left: 10%; 
+    text-align: start;
+
 } 
 
 .listage h4{
-    padding-bottom: 2%;
+    padding-bottom: 10%;
 }
 
 
@@ -754,6 +755,36 @@ header{
 
     .liste_groupe{
         margin: 0;
+        border: none;
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .listage ul{
+        font-size: 0.9rem;
+        align-items: center;
+        padding-top: 2%;
+    }
+
+    #liste-fonctionnalites{
+        flex-direction: column;
+ 
+    }
+    .listage h4 {
+        padding-bottom: 2%;
+    }
+
+    .listage{
+        border: 1px solid white;
+        max-height: 33vh;
+    }
+
+
+    .listage ul > li{
+        padding-left: 0;
     }
 }
 
