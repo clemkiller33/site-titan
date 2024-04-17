@@ -46,28 +46,14 @@ body{
   }
 
 
-  form {
-    max-width: 400px;
-    margin: 0 auto;
-    border:1px solid black;
-    padding: 15px;
-    border-radius: 10px;
-    padding:10%;
-    
-  }
+ 
 
   label {
     display: block;
     margin-bottom: 8px;
+    font-size: large;
   }
 
-  input,
-  textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-  }
 
   button {
     background-color: black;
@@ -149,31 +135,6 @@ footer{
 
 
 
-#container{
-  display: flex;
-  flex-direction: row;
-  min-height: 100%;
-  align-items: center;
-  justify-content: center;
-  min-width: 100%;
-  background-color: #f9f9f9;
-  
- 
-  ;
- 
-}
-#formulaire {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f9f9f9;
-  padding-bottom: 10px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-  color: black;
-
-  
- 
-}
 
 h1 {
   margin-bottom: 20px;
@@ -184,21 +145,34 @@ label {
   font-weight: bold;
 }
 
+
+form,label{
+  flex: 1; /* Pour que les labels occupent le même espace que les champs de saisie */
+  text-align: right; /* Pour aligner les labels à droite */
+  margin-right: 10px; 
+  white-space: nowrap; /* Pour éviter le passage à la ligne des labels */
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
+ 
   padding: 10px;
+  height: 3vh;
   margin: 5px 0 15px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  flex: 3; /* Pour que les champs de saisie occupent plus d'espace */
+  width: auto; /* Pour que les champs de saisie prennent la largeur disponible */
+  height: 3vh;
 }
 
 button[type="submit"] {
   background-color:#f9f9f9;
   color: black;
   padding: 10px 20px;
+  height: 5vh;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -206,11 +180,56 @@ button[type="submit"] {
   border : 1px solid black;
 }
 
+form textarea {
+  flex: 3; /* Pour que la textarea occupe plus d'espace */
+  width: 70%; /* Largeur de la textarea */
+  height: 120px; /* Hauteur de la textarea */
+}
+
+
 button[type="submit"]:hover {
   background-color: orange;
 }
 
 
+
+#formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f9f9f9;
+  padding-bottom: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  
+  
+
+  
+ 
+}
+
+#mail_nom{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  border:1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+  padding:10%;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  justify-content: center;
+  align-items: center;
+  
+}
 
 main{
     display: flex;

@@ -1,1 +1,33 @@
 git remote add origin https://github.com/clemkiller33/Garage.git
+
+
+1 - Gestion des comptes
+	a) Type clients/prospects/partenaires/fabriquants/cabinet architect
+	b) Gestion des contacts
+	c) Encore plus... (cliquer tout décrire la fiche)
+
+2 - Suivi d'activité
+	a)Compte rendu des visites
+	b)Historique de toutes les visites
+	c) Encore plus...
+
+
+3 - Gestion des projets
+	a)Création et modification des projets
+	b)Suivi d'avancement du projet
+	c) Encore plus...
+
+4 - Gestion des contrats : 
+	a)Création et modification des contrats partenaire/fabriquants
+	b)Surveillance du respect du contrat
+	c)Encore plus...
+
+5 - Agenda des rdv 
+	a)Création/modif agenda
+	b)Synchronisation avec outlook
+	c) Encore plus
+
+6 - Gestion des recettes et des depenses : 
+	a)Ajout et modification des écritures
+	b)Suivi des montants et soldes sur periodes
+	c) encore plus 
