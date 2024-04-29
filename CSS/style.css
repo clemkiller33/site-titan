@@ -632,6 +632,34 @@ video{
     display: none;
 }
 
+#mobile{
+    background-color: #f5f6fa;
+    color: black;
+    position: relative;
+}
+
+#mobile-telechargement{
+    width: 100%;
+}
+#mobile-telechargement a{
+    border: 1px solid black;
+    padding-top: 10%;
+    padding-right: 20%;
+    border-radius: 10px;
+    color: black;
+
+}
+
+
+#mobile-telechargement img{
+    height: 7vh;
+    width: 7vw;
+ 
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     
      /* Correction de la marge à gauche et à droite */
@@ -641,7 +669,7 @@ video{
         width: 100%;
         font-size: large;
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Helvetica';
         overflow-x: hidden; /* Empêche le défilement horizontal */
     }
 
@@ -651,8 +679,10 @@ video{
         min-height: auto; /* Annulez la hauteur minimale pour permettre un ajustement automatique en fonction du contenu */
         max-height: 65vh; /* Réduisez la hauteur maximale des offres */
         font-size: medium;
+        text-align: left;
         margin-bottom: 20px; /* Ajoute une marge en bas de chaque div .offre */
         padding: 0;
+        border: 0;
     }
 
     .offre:hover{
@@ -666,6 +696,8 @@ video{
 
     #section3{
         max-height: none;
+        align-items: start;
+        display: none;
     }
     
     .ensemble_offres_texte,
@@ -698,11 +730,17 @@ video{
     .liste_service {
         font-size:large;
         gap: 1.5vh;
-        justify-content: center; /* Assurez-vous que les éléments sont bien alignés */
+        justify-content: start; /* Assurez-vous que les éléments sont bien alignés */
+        list-style: circle;
+       
     }
 
-    .liste_service > li {
-        text-align: center;
+    #section2{
+        margin: 2%;
+    }
+
+    .liste_service  li {
+        text-align: left;
     }
 
     section {
@@ -776,9 +814,11 @@ video{
         border: none;
         width: 100%;
         padding: 0;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: start;
         gap: 0%;
+        flex-direction: row;
+        height: 35vh;
         
     }
 
@@ -799,10 +839,13 @@ video{
     }
 
     .listage{
-      
-        max-height: 33vh;
+        max-width: 50vw;
+        max-height: 50vh;
+       
     }
-
+    #section2 button{
+        display: none;
+    }
 
     .listage ul > li{
         padding-left: 0;
@@ -814,6 +857,7 @@ video{
    
     .slider img {
         height: 40vh;
+        width: 100%;
     }
 
     #caroussel{
