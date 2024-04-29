@@ -1,107 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/contact.css">
-  <link rel="stylesheet" href="CSS/menu-burger.css">
-  <title>Formulaire de Contact</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/test.css">
+    <script src="JS/contact.js" defer></script>
    
-  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="navbar">
-                <div id="menu_liste">
-                    <ul>
-                        <li><a href="accueil.html">HOME</a>  </li>
-                        <li><a href="contact.html">CONTACT</a>  </li>   
-                        <li><a href="espace_client.html">ESPACE CLIENT</a></li>
-                    </ul>
-                </div>
-
-                <div class="logo">
-                    <a href="accueil.html"><img src="img/ngplus_03312200_185714927.png" alt="logo ngplus" id="image_ngplus"></a>
-                </div>
-                <div class="container nav-container">
-                    
-                    <input class="checkbox" type="checkbox" name="" id="" />
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>  
-                
-                    <div class="menu-items">
-                        <ul id="menu-liste-burger">
-                            <li><a href="index.html">HOME</a>  </li>
-                            <li><a href="contact.html">CONTACT</a>  </li>   
-                            <li><a href="espace_client.html">ESPACE CLIENT</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>   
     <main>
-        <section>
-            <div id="container1">
-                <h1>Découvrez TITAN de plus près</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi cupiditate minus et reprehenderit accusantium sit asperiores. </p>
-                
-                    <div id="formulaire">
-                       
-                        <form action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="f872d13d-1b6c-46f0-97aa-170efe882e34">
-                            <div id="mail_nom">
-                                <!-- <label for="nom">Nom :</label> -->
-                                <input type="text" id="nom" name="nom" placeholder="Nom" required>
-            
-                                <!-- <label for="email">E-mail :</label> -->
-                                <input type="email" id="email" name="email" placeholder="Email" required>
-                            </div>
-                            <!-- <label for="message">Message :</label> -->
-                            <textarea id="message" name="message" rows="4" style="width: 400px !important; height: 100px !important;" placeholder="Message" required></textarea>
+        <div id="gauche-droite">
+            <div id="gauche">
+                <img src="img/removebg/logo_titan-removebg-preview.png" alt="logo de TITAN">
+                <form action="https://api.web3forms.com/submit" method="POST" id="formulaire">
+                    <input type="hidden" name="access_key" value="f872d13d-1b6c-46f0-97aa-170efe882e34">
+                    <h1>Nous contacter</h1>
+                    <div id="mail_nom">
+                        <!-- <label for="nom">Nom :</label> -->
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
 
-        
-                            <button type="submit">Envoyer</button>
-                        </form>
+                        <!-- <label for="email">E-mail :</label> -->
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
-                    
-                
-            </div>
-        </section>
+                    <!-- <label for="message">Message :</label> -->
+                    <textarea id="message" name="message" rows="4" style="width: 400px !important; height: 100px !important;" placeholder="Message" required></textarea>
 
+
+                    <button type="submit">Envoyer</button>
+                </form>
+                <p><a href="accueil.html">Retour</a></p>
+            </div>
+
+            <div id="droite">
+                <div id="image-header">
+                    <img src="img/removebg/ngplus_03312200_185714927-removebg-preview.png" alt="logo de NGPLUS">
+                </div>
+                <div class="text-partie-droite">
+                    <h2>Qui sommes nous ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur quibusdam sint maxime placeat sapiente temporibus ipsa magni, veritatis earum nesciunt tenetur tempora inventore numquam neque nemo modi reprehenderit voluptatum.</p>
+
+                </div>
+            
+            </div>
+        </div>
 
     </main>
-
-    <section>
-
-        <footer>
-            <div class="footer_organize">
-                <img src="img/ngplus_03312200_185714927.png" alt="logo ngplus">
-            </div>
-            <div class="footer_organize">
-                <a href="contact.html"><h3>Contactez-nous</h3></a>
-                <p>NGPLUS SARL
-                    Sociétée basée sur
-                    CESTAS (33610)</p>
-            </div>
-            <div class="footer_organize">
-                <h3>LIENS</h3>
-                <a href="https://www.ngplus.fr/a-propos/">A PROPOS</a>
-                <!-- <p>Lorem ipsum dolor sit amet</p> -->
-            </div>
-            <div class="footer_organize">
-                <h3>SUIVEZ-NOUS</h3>
-                <a href="lien likedin">LINKEDIN</a>
-                <a href="lien likedin">FACEBOOK</a>
-                <a href="lien likedin">INSTAGRAM</a>
-            </div>
-        </footer>
-    </section>
 </body>
-
 </html>

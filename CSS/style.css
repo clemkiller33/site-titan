@@ -636,15 +636,15 @@ video{
     background-color: #f5f6fa;
     color: black;
     position: relative;
+    display: none;
 }
 
 #mobile-telechargement{
     width: 100%;
 }
 #mobile-telechargement a{
-    border: 1px solid black;
-    padding-top: 10%;
-    padding-right: 20%;
+   
+
     border-radius: 10px;
     color: black;
 
@@ -655,9 +655,7 @@ video{
     height: 7vh;
     width: 7vw;
  
-    padding: 1%;
-    margin: 1%;
-    border-radius: 10px;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -788,7 +786,9 @@ video{
         
     }
 
-
+    #mobile{
+        display: flex;
+    }
 
 
     .carousel-arrows >button{
