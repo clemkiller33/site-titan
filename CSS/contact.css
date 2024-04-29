@@ -223,6 +223,7 @@ main{
 
     #formulaire{
       gap: 1vh;
+      padding: 1%;
     }
     body,a{
       color: white;

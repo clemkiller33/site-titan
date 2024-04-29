@@ -860,10 +860,7 @@ video{
         display: none;
     }
    
-    .slider img {
-        height: 40vh;
-        width: 90%;
-    }
+
 
     #caroussel{
         gap: 5vh;
