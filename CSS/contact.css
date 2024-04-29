@@ -19,7 +19,7 @@ a{
 
 
 a:hover{
-    color: white;
+    color: orange;
 }
 
 #gauche{
@@ -28,8 +28,9 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: orange;
+    background-color:#f5f6fa;
     gap: 5%;
+    color: black;
    
 }
 
@@ -57,7 +58,7 @@ main{
 
 #formulaire {
     width: 85%;
-  
+    background-color: #f5f6fa;
     /* padding: 15px; */
     border-radius: 10px;
     /* padding:10%; */
@@ -69,7 +70,7 @@ main{
     max-height: 50vh;
     /* margin: 20%; */
     transition: transform 0.3s ease;
-    border: 1px solid white;
+    border: 1px solid black;
     
   }
 
@@ -141,7 +142,7 @@ main{
 
 
   h1{
-    color: white;
+    color: black;
   }
 
 
@@ -172,7 +173,7 @@ main{
 
 #gauche > img{
 
-  height: 20vh;
+  height: 30vh;
 
  
 }
