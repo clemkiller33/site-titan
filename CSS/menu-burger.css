@@ -241,15 +241,15 @@ header{
        
       }
 
-
-
-              
-    .logo > img{
+      #image_ngplus{
         height: 6vh;
-    }
+        width: 8vw;
+      }
+
+
 
     .logo{
-      left:75%;
+      left:85%;
     }
 
 }
