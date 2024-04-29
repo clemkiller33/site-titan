@@ -280,13 +280,13 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-	padding: 2rem;
+	padding: 1rem;
     color: black;
     background-color: #f5f6fa;
     min-height: 100vh;
     gap: 25%;
     position:relative;
-    width: 100vmax;
+    width: 100%;
     box-sizing: border-box;
     min-height: 100vh;
     font-size: x-large;
@@ -688,6 +688,10 @@ video{
     
     }
 
+   header{
+        margin-top: 2vh;
+    }
+
     .download{
         margin-bottom: 5%;
     }
@@ -823,7 +827,7 @@ video{
     }
 
     .listage ul{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         align-items: start;
         padding-top: 2%;
         
@@ -836,6 +840,7 @@ video{
     }
     .listage h4 {
         padding-bottom: 2%;
+        font-size: 0.9rem;
     }
 
     .listage{
@@ -857,7 +862,7 @@ video{
    
     .slider img {
         height: 40vh;
-        width: 100%;
+        width: 90%;
     }
 
     #caroussel{

@@ -171,11 +171,9 @@ main{
 
 
 #gauche > img{
-  width: 20vw;
+
   height: 20vh;
 
-  min-width: 20vw;
-  min-height: 20vh;
  
 }
 
@@ -212,14 +210,28 @@ main{
     #gauche-droite{
         flex-direction:column;
     }
-    #gauche,
-    #droite{
+    #gauche{
         width: 100%;
         height: 100vh;
+        background-color: black;
+    }
+
+
+    #droite{
+      display: none;
+    }
+
+    #formulaire{
+      gap: 1vh;
+    }
+    body,a{
+      color: white;
     }
   }
 
-
+#gris{
+  color: grey;
+}
 
 
 
