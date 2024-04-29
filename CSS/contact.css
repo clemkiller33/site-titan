@@ -71,6 +71,7 @@ main{
     /* margin: 20%; */
     transition: transform 0.3s ease;
     border: 1px solid black;
+    overflow: hidden;
     
   }
 
@@ -231,10 +232,12 @@ main{
     }
   }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 #gris{
   color: grey;
+  
 }
 
 
-
-  
