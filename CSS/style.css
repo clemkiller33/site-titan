@@ -647,7 +647,7 @@ video{
 
    
     .offre {
-        width: 100%;
+        width: 80%;
         min-height: auto; /* Annulez la hauteur minimale pour permettre un ajustement automatique en fonction du contenu */
         max-height: 65vh; /* Réduisez la hauteur maximale des offres */
         font-size: medium;
@@ -673,13 +673,14 @@ video{
         gap:1%;
     }
 
-    .texte_offre_mois,
-    .ensemble_offres_texte > h3,
-    .texte_offre_annee {
-        font-size: small /* Ajustez la taille de la police pour les petits écrans */
+   
+    .ensemble_offres_texte > h3{
+        font-size: x-large /* Ajustez la taille de la police pour les petits écrans */
         
     }
-
+    .texte_offre_mois h3{
+        font-size: 2.3vw;
+    }
     #ensemble_offre {
         gap: 10%; /* Assurez-vous que les offres ont un espacement entre elles */
         padding: 0 5px; /* Ajoutez un léger padding pour éviter que les offres ne touchent les bords de l'écran */
@@ -696,7 +697,7 @@ video{
 
     .liste_service {
         font-size:large;
-        gap: 2%;
+        gap: 1.5vh;
         justify-content: center; /* Assurez-vous que les éléments sont bien alignés */
     }
 
@@ -777,6 +778,7 @@ video{
         padding: 0;
         align-items: center;
         justify-content: center;
+        gap: 0%;
         
     }
 
@@ -789,6 +791,7 @@ video{
 
     #liste-fonctionnalites{
         flex-direction: column;
+        gap: 0%;
  
     }
     .listage h4 {
@@ -805,8 +808,18 @@ video{
         padding-left: 0;
     }
 
-
+    #texte_telechargement{
+        display: none;
+    }
    
+    .slider img {
+        height: 40vh;
+    }
+
+    #caroussel{
+        gap: 5vh;
+    }
+
 }
 
 
