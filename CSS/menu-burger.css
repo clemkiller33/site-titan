@@ -161,7 +161,7 @@ header{
   #image_ngplus{
     height: 10vh;
     border: 1px solid white;
-    min-width: 90%;
+    min-width: 100%;
     min-height: 100%;
     
 }
@@ -245,6 +245,7 @@ header{
 
       #image_ngplus{
         height: 6vh;
+        max-width: 8vw;
         width: 8vw;
       }
 

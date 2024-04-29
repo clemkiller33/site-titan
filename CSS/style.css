@@ -652,8 +652,8 @@ video{
 
 
 #mobile-telechargement img{
-    height: 7vh;
-    width: 7vw;
+    height: 10vh;
+    max-width: 15vw;
  
 
 }
@@ -761,7 +761,7 @@ video{
     }
 
     .button{
-        height: 4vh;
+        height: 6vh;
         width: auto;
     }
 
@@ -809,7 +809,7 @@ video{
         font-size: small;
     }
 
-    h2,h3,h4{font-size: x-large;}
+    h2,h3,h4{font-size: large;}
 
 
 
@@ -818,16 +818,17 @@ video{
         border: none;
         width: 100%;
         padding: 0;
-        align-items: start;
-        justify-content: start;
-        gap: 0%;
-        flex-direction: row;
-        height: 35vh;
+        align-items: center;
+        justify-content: center;
+        gap: 5vh;
+        flex-direction: column;
+  
+      
         
     }
 
     .listage ul{
-        font-size: 0.7rem;
+        font-size: 1rem;
         align-items: start;
         padding-top: 2%;
         
@@ -835,17 +836,22 @@ video{
 
     #liste-fonctionnalites{
         flex-direction: column;
-        gap: 0%;
+        margin:0;
+        padding: 0;
+        gap: 0;
+       
  
     }
     .listage h4 {
         padding-bottom: 2%;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .listage{
-        max-width: 50vw;
-        max-height: 50vh;
+        width: 100%;
+        height: 25vh;
+      
+       
        
     }
     #section2 button{
