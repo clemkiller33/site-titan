@@ -57,7 +57,7 @@ main{
 
 
 #formulaire {
-    width: 85%;
+    width: 100%;
     background-color: #f5f6fa;
     /* padding: 15px; */
     border-radius: 10px;
@@ -67,11 +67,12 @@ main{
     gap: 3%;
     justify-content: center;
     align-items: center;
-    max-height: 50vh;
+  
     /* margin: 20%; */
     transition: transform 0.3s ease;
     /* border: 1px solid black; */
     overflow: hidden;
+   
     
   }
 
@@ -91,7 +92,10 @@ main{
   label {
     font-weight: bold;
   }
-  
+   #formulaire-container {
+    padding: 20px;
+    width: 100%;
+}
   
   #formulaire,
   #formulaire label{
@@ -113,7 +117,7 @@ main{
     box-sizing: border-box;
     flex: 3; /* Pour que les champs de saisie occupent plus d'espace */
     width: auto; /* Pour que les champs de saisie prennent la largeur disponible */
-    height: 3vh;
+    height: 80%;
   }
 
   textarea{
@@ -132,6 +136,8 @@ main{
     cursor: pointer;
     transition: background-color 0.3s ease;
     border : 1px solid black;
+    margin-top: 2%;
+    min-height: 4vh;
   }
   
 
@@ -216,6 +222,7 @@ main{
         width: 100%;
         height: 100vh;
         background-color: #f5f6fa;
+        justify-content: space-between;
     }
 
 
@@ -234,6 +241,11 @@ main{
 
     body,a{
       color: white;
+    }
+
+
+    #mobile-modif{
+      color: black;
     }
   }
 
