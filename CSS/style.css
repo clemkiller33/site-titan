@@ -126,14 +126,16 @@ h1{
 }
 
 
-#espace_telechargement{
+#espace_telechargement{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
 }
 
-
+.espace{
+    width:0.5vw;
+}
 #bandeau_blanc >p{
     color: grey;
 }
@@ -162,6 +164,8 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     
 }
@@ -181,24 +185,26 @@ h1{
 .liste_groupe{
     display: flex;
     flex-direction: column;
-    justify-content:start ;
+    justify-content:start;
     align-items: start;
-    width: 33%;
+    width: calc(33% - 4%);
     border: 1px solid white;
-    height: 70vh;
     margin: 2%;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    font-size: 2rem;
+    font-size: 2vw;
+    height: 80vh;
+    min-height: 70vh;
+    gap: 1vh;
 }
 .liste_groupe:hover{
-   transform: scale(1.1);
+   transform: scale(1.01);
 }
 .listage{
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 50%; 
+    max-height: 40%; 
 }
  .listage ul > li{
     padding-bottom: 5%;
@@ -207,8 +213,9 @@ h1{
 } 
 
 .listage h4{
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     color: orange;
+    text-align: start;
 }
 
 
@@ -433,16 +440,19 @@ button{
     border:1px solid  grey  ;
     min-height: 80vh;
     font-size: large;
-    width: 25vmax; 
+    width: 28vw;
+    max-width: 28vw; 
     max-height: fit-content;
     transition: transform 0.3s ease;
     padding-left: 20px;
     padding-right: 20px;
+ 
+    padding-bottom: 2%;
 
 }
 
 .offre:hover{
-    transform:scale(1.1);
+    transform:scale(1.03);
 
 }
 
@@ -451,7 +461,7 @@ button{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 3%;
+   
 }
 .texte_offre_annee{
     display: flex;
@@ -651,12 +661,7 @@ video{
 }
 
 
-#mobile-telechargement img{
-    height: 10vh;
-    max-width: 15vw;
- 
 
-}
 
 @media only screen and (max-width: 768px) {
     
@@ -671,6 +676,9 @@ video{
         overflow-x: hidden; /* Empêche le défilement horizontal */
     }
 
+    .liste_groupe:hover{
+        transform: none;
+    }
    
     .offre {
         width: 80%;
@@ -790,10 +798,22 @@ video{
         
     }
 
-    #mobile{
-        display: flex;
+    #mobile-telechargement img{
+        height: 10vh;
+        max-width: 17vw;
+        min-width: 15vw;
+     
+    
     }
 
+    #mobile{
+        display: flex;
+       
+    }
+
+    #mobile h2,h3{
+        font-size: x-large;
+    }
 
     .carousel-arrows >button{
         background-color: transparent;
@@ -819,9 +839,10 @@ video{
         width: 100%;
         padding: 0;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         gap: 5vh;
         flex-direction: column;
+        border-bottom: 1px solid grey;
   
       
         
