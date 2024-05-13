@@ -1,0 +1,41 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: grey;
+    background-color: black;
+    gap: 3%;
+    height: 100vh;
+    font-size: 125%;
+    
+
+}
+
+
+.footer_organize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+    gap: 3%;
+}
+
+
+.footer_organize  a{
+    text-decoration: underline;
+}
+
+.footer_organize  a:hover{
+  color: orange;
+}
+@media only screen and (max-width:768px){
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+

@@ -37,14 +37,17 @@ a:hover{
 
 
 #droite{
-    width: 70%;
+    width: 70%; 
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center; 
     overflow: hidden; 
     position: relative;
+    height: 100vh;
+    gap: 13vh;
+    
 }
 
 
@@ -166,12 +169,17 @@ main{
     display: flex;
     flex-direction: column;
     transition: transform 0.5s ease;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     position: relative;
-    height: 87vh;
-    max-width: 90%;
    
+    max-width: 90%;
+    
+   
+}
+
+#texte{
+  font-size: 125%;
 }
 
 
@@ -297,6 +305,8 @@ main{
   position: relative;
   width: 100vw;
   height: 300px;
+  display: flex;
+
 
  
 }
@@ -304,10 +314,10 @@ main{
 .pic-ctn > img {
   position: absolute;
   top: 0;
-  left: calc(50% - 105px);
+  left: calc(50% - 10vw);
   opacity: 0;
-  height: 20vh;
-  width: 15vw;
+  height: 40vh;
+  width: 20vw;
   animation: display 10s infinite;
   background-color: #f5f6fa;
   border-radius: 10px;
@@ -324,4 +334,12 @@ img:nth-child(4) {
 }
 img:nth-child(5) {
   animation-delay: 8s;
+}
+
+
+#reference{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
