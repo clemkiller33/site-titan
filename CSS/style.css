@@ -275,7 +275,7 @@ a{
     justify-content: center;
     align-items: center;
     min-width: 30%;
-    gap: 5%;
+    gap: 3vh;
 }
 
 
@@ -630,6 +630,7 @@ header{
 
 #section4{
     min-height: 100vh;
+    display: none;
 }
 
 video{
@@ -849,10 +850,10 @@ video{
         padding: 0;
         align-items: center;
         justify-content: start;
-        gap: 5vh;
+        gap: 10vh;
         flex-direction: column;
         border-bottom: 1px solid grey;
-        max-height: 50vh;
+      
   
       
         

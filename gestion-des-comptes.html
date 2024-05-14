@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="CSS/menu-burger.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Lien vers le fichier CSS du thème par défaut de Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="JS/scrollbar.js" defer ></script>
+
 </head>
 <body>
     <header>
@@ -50,14 +54,36 @@
     </header>
     <main>
         <h1>Gestion des comptes</h1>
-        <img src="img/capture TITAN/client.png" alt="">
-        <p>La gestion des comptes vous permet de créer des classes pour trier vos clients à  votre façon, par exemple ici nous sommes sur le type de compte "client" mais libre à vous de créer autant de catégories que vous voulez, par exemple : </p>
-        <h2>Liste des prospects</h2>
-        <img src="img/capture TITAN/prospect.png" alt="image-prospet">
-        <h2>Liste des fournisseurs</h2>
-        <img src="img/capture TITAN/fournisseur.png" alt="image-fournisseurs">
-        <h2>Liste des partenaires</h2>
-        <img src="img/capture TITAN/partenaire.png" alt="image-partenaire">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="img/capture TITAN/client.png" alt="carrousel image 1 agenda" />
+                <img id="slide-2" src="img/capture TITAN/prospect.png" alt="carrousel image 2 fiche client" />
+                <img id="slide-3" src="img/capture TITAN/fournisseur.png" alt="carrousel image 3 fiche contact" />
+                <img id="slide-4" src="img/capture TITAN/partenaire.png" alt="carrousel image 4 Dépense et Recette" />
+           
+ 
+            </div>
+            <div class="carousel-arrows">
+                <button class="prev-arrow"><i class="fas fa-chevron-left"></i><</button>
+                <button class="next-arrow"><i class="fas fa-chevron-right"></i>></button>
+            </div>
+            
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+             
+
+            </div>
+            
+        </div>
+        <span><h3>La gestion des comptes vous permet de créer des classes pour trier vos clients à  votre façon, par exemple ici nous sommes sur le type de compte "client" mais libre à vous de créer autant de catégories que vous voulez, par exemple : </h3></span>
+
+
+
+
+       
     </main>
     <section id="footer">
         <footer>

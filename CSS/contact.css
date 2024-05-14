@@ -128,7 +128,8 @@ main{
   }
 
   input[type="text"]:hover,
-  input[type="email"]:hover{
+  input[type="email"]:hover,
+  input[type="tel"]:hover{
     border: 1px solid black;
   }
 
