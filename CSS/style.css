@@ -38,8 +38,7 @@ body{
     text-align: center;
     line-height: 1;
     width: 100%;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+
     margin: 0;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -681,6 +680,11 @@ video{
         text-align: center;
         font-family: 'Helvetica';
         overflow-x: hidden; /* Empêche le défilement horizontal */
+        overflow-y: none;
+        scroll-snap-type: none; 
+
+
+
     }
 
     .liste_groupe:hover{
@@ -738,6 +742,12 @@ video{
         align-items: center;
        
         
+    }
+
+    #principale{
+        display: flex;
+        align-items: center;
+        justify-content: start;
     }
 
     #section2 > .button{
@@ -806,7 +816,7 @@ video{
     }
 
     #mobile-telechargement img{
-        height: 8vh;
+        height: 6vh;
         width: 30vw;
         border: 1px solid black;
         border-radius: 10px;
@@ -904,6 +914,10 @@ video{
         gap: 5vh;
     }
 
+    .listage ul li:last-child{
+        display: none;
+    }
+
 }
 
 
@@ -965,3 +979,5 @@ video{
     border-radius: 10px;
     width:30%
 }
+
+
