@@ -145,13 +145,23 @@ h1{
     justify-content: center;
     align-items: center;
     /* padding-bottom: 5%; */
-    max-width: 100%;
+    width: 95%;
     background-color: #f5f6fa;
     color: black;
-    min-height: 100vh;
+    height: 90vh;
+    margin: 3%;
+    border-radius: 10px;
+   
     
     margin-bottom: 5%;
 }
+#bandeau_superieur img{
+    height: 50vh;
+    width: 27vw;
+    overflow-y: hidden;
+    border-radius: 10px;
+}
+
 
 #section2{
     font-size: x-large;
@@ -384,7 +394,7 @@ a{
 }
 
 section {
-    min-height: 100vh;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -582,11 +592,58 @@ button{
 
 #section3{
     gap: 3vh;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#collab{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #f5f6fa;
+}
+
+#collaboratif-les-2-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    width: 100%;
+    overflow: hidden;
+    
 }
 
 
-  
+.collaboratif-liste{
+    display: flex;
+    flex-direction: column;
 
+    text-align: center;
+    gap: 2vh;
+    font-size: 100%;
+}
+ 
+.collaboratif-liste a{
+    color: black;
+}
+.collaboratif-box{
+
+    width: 100%;
+    margin: 3%;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+    transition : transform 0.3s ease;
+    height: 60vh;
+}
+
+
+.collaboratif-box:hover{
+    transform:scale(1.1);
+}
 
 header{
     position: sticky;
@@ -596,9 +653,9 @@ header{
 
 
 .light-section{
-    background-color: #f5f6fa;
+    background-color: white;
     color: black;
-    min-height: 100vh;
+  
     position: relative;
     max-width: 100%;
 
@@ -607,7 +664,7 @@ header{
 .dark-section{
     background-color: black;
     color: white;
-    min-height: 100vh;
+   
     max-width: 100%;
 }
 
@@ -679,6 +736,7 @@ video{
         font-size: large;
         text-align: center;
         font-family: 'Helvetica';
+        font-weight: 100;
         overflow-x: hidden; /* Empêche le défilement horizontal */
         overflow-y: none;
         scroll-snap-type: none; 
@@ -707,6 +765,11 @@ video{
     
     }
 
+
+    .light-section{
+     
+    }
+
    header{
         margin-top: 2vh;
     }
@@ -726,13 +789,26 @@ video{
         gap:1%;
     }
 
+    #bandeau_superieur img{
+        width:45%;
+         height:25%;
+    }
    
+
+    .collaboratif-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
     .ensemble_offres_texte > h3{
-        font-size: x-large /* Ajustez la taille de la police pour les petits écrans */
-        
+        font-size: x-large; /* Ajustez la taille de la police pour les petits écrans */
+        font-weight: 100;
     }
     .texte_offre_mois h3{
         font-size: 2.3vw;
+        font-weight: 100;
     }
     #ensemble_offre {
         gap: 10%; /* Assurez-vous que les offres ont un espacement entre elles */
@@ -744,10 +820,19 @@ video{
         
     }
 
+
+    .dark-section{
+
+    }
+
+
+
     #principale{
-        display: flex;
+       
         align-items: center;
         justify-content: start;
+        height: 75vh !important;
+    
     }
 
     #section2 > .button{
@@ -762,8 +847,9 @@ video{
        
     }
 
-    #section2{
+    #section2,#footer{
         margin: 2%;
+        min-height: 100vh;
     }
 
     .liste_service  li {
@@ -771,7 +857,7 @@ video{
     }
 
     section {
-        min-height: 100vh;
+        
     }
 
     footer {
@@ -797,9 +883,15 @@ video{
     #bandeau_superieur {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        padding: 5%;
+        margin: 3%;
+        background-color: #f5f6fa;
+        border-radius: 10px;
+        height: 60vh;
+        gap: 2vh;
+        width: 93%;
+      
     }
 
     .slider-nav {
@@ -816,8 +908,8 @@ video{
     }
 
     #mobile-telechargement img{
-        height: 6vh;
-        width: 30vw;
+        height: 8vh;
+        width: 33vw;
         border: 1px solid black;
         border-radius: 10px;
        
@@ -828,11 +920,26 @@ video{
     #mobile{
         display: flex;
         gap: 10vh;
+        background-color: white;
        
+    }
+
+    #texte-mobile{
+        background-color: #f5f6fa;
+        border-radius: 10px;
+        margin: 3%;
+        width: 93%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
     }
 
     #mobile h2,h3{
         font-size: x-large;
+        font-weight: 100;
     }
 
     .carousel-arrows >button{
@@ -849,20 +956,23 @@ video{
         font-size: small;
     }
 
-    h2,h3,h4{font-size: large;}
+    h2,h3,h4{font-size: large;
+            font-weight: 100;}
 
 
 
     .liste_groupe{
-        margin: 0;
-        border: none;
-        width: 100%;
+        margin: 3%;
         padding: 0;
         align-items: center;
         justify-content: start;
-        gap: 10vh;
+        min-height: auto;
         flex-direction: column;
-        border-bottom: 1px solid grey;
+        background-color: #303030;
+        border-radius: 10px;
+        width: 93%;
+        height: 45vh;
+        border: 0.5px solid #303030;
       
   
       
@@ -873,6 +983,7 @@ video{
         font-size: 1rem;
         align-items: start;
         padding-top: 2%;
+        font-weight: 100;
         
     }
 
@@ -886,6 +997,7 @@ video{
     }
     .listage h4 {
         padding-bottom: 2%;
+        font-weight: 100;
         font-size: 1.2rem;
     }
 
@@ -902,6 +1014,8 @@ video{
 
     .listage ul > li{
         padding-left: 0;
+        font-weight: 100;
+        font-size: 75%;
     }
 
     #texte_telechargement{
@@ -911,11 +1025,16 @@ video{
 
 
     #caroussel{
-        gap: 5vh;
+        display: none;
     }
 
     .listage ul li:last-child{
         display: none;
+    }
+
+
+    h1{
+        font-weight: 100;
     }
 
 }
@@ -981,3 +1100,14 @@ video{
 }
 
 
+#footer{
+    min-height: 100vh;
+}
+
+
+#principale{
+   height: 100vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
