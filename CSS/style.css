@@ -630,7 +630,7 @@ button{
     color: black;
 }
 .collaboratif-box{
-
+    display: none;
     width: 100%;
     margin: 3%;
     background-color: white;
@@ -693,7 +693,19 @@ video{
     max-width: 80%;
 }
 
+#tkt{
+    background-color: white;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.margin{
+    width: 95%;
+    border-radius: 10px;
+}
 /* Styles spécifiques au menu burger */
 .menu-toggle {
     display: none;
