@@ -598,7 +598,7 @@ button{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   
+   background-color: white;
     width: 100%;
     overflow: hidden;
     
@@ -800,6 +800,7 @@ video{
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        background-color: #f5f6fa;
 
     }
     .ensemble_offres_texte > h3{
