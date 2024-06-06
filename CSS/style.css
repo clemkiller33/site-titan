@@ -298,7 +298,7 @@ a{
     align-items: center;
     padding: 1rem;
     color: black;
-    background-color: #f5f6fa;
+    background-color: white;
     min-height: 100vh;
     gap: 3vh;
     position: relative;
@@ -682,8 +682,8 @@ video{
 }
 
 #tkt{
-    background-color: white;
-    height: 90vh;
+    background-color: #f5f6fa;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
