@@ -53,6 +53,7 @@ header{
     width: 100%;
     position:absolute;
     z-index: 1000;
+    top:7%;
     
   }
   
@@ -245,7 +246,7 @@ header{
 
       #image_ngplus{
         height: 8vh;
-        width: 13vw;
+        width: 15vw;
        
       
       }
@@ -253,7 +254,7 @@ header{
 
 
     .logo{
-      left:85%;
+      left:77%;
     }
 
 }
