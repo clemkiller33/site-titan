@@ -321,6 +321,7 @@ a{
     -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
     scrollbar-width: none; /* Hide scrollbar Firefox */
     width: auto;
+    border : 3px solid orange;
 }
 
 .slider img {
@@ -677,14 +678,14 @@ video{
 
 #tkt{
     background-color: #f5f6fa;
-    height: 100vh;
+    height: 93vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 97%;
-    gap: 7vh;
-    font-size: 125%;
+    gap: 2vh;
+    font-size: 105%;
 }
 
 .margin{
